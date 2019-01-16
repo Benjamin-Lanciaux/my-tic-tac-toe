@@ -121,7 +121,6 @@ function myTicTacToe(){
 
      function AI (){
         var random = Math.floor(Math.random() * 8);
-        console.log(random);
         while (square[random].innerHTML !== ""){
             random = Math.floor(Math.random() * 8);
         }
@@ -137,15 +136,13 @@ function myTicTacToe(){
 
     function caseManagementAI(){
         if (this.innerHTML === "" && noWinner){ 
-            console.log("player turn");
             this.innerHTML = player1;
             this.style.color = "#e75126";
             turnsCounter = turnsCounter + 1;
             p1Selection.push(parseInt(this.id));
             playerTurn++;
             checkWinnerAI();
-            if (noWinner && !tieGame){ 
-                console.log("IA turn");
+            if (noWinner && !tieGame){
                 AI();
             }
         } else if (!noWinner){
