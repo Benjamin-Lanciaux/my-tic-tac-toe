@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    background-color: rgb(219, 219, 219);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#declare-winner{
+    height: 7%;
+}
+
+#declare-winner p{
+    margin: 2%;
+}
+
+.square{
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: -webkit-center;
+    font-size: 60px;
+}
+
+.border-t{
+    border-top: none;
+}
+
+.border-l{
+    border-left: none;
+}
+
+.border-r{
+    border-right: none;
+}
+
+.border-b{
+    border-bottom: none;
+}
+
+#restart{
+    margin: 5%;
+}
+
